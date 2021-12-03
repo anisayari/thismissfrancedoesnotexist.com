@@ -71,19 +71,13 @@
 </div>
 
 <script>
-  var myVar = '/README.md/assets/image/fakes000000.png/assets/image/fakes000201.png/assets/image/fakes000403.png/assets/image/fakes000604.png/assets/image/fakes000806.png/assets/image/fakes001008.png/assets/image/fakes001209.png/assets/image/fakes001411.png/assets/image/fakes001612.png/assets/image/fakes001814.png/assets/image/fakes002016.png/assets/image/fakes002217.png/assets/image/fakes002419.png/assets/image/fakes002620.png/assets/image/fakes002822.png/assets/image/fakes003024.png/assets/image/fakes003225.png/assets/image/fakes003427.png/assets/image/fakes003628.png/assets/image/fakes003830.png/assets/image/fakes004032.png/assets/image/fakes004233.png/assets/image/fakes004435.png/assets/image/fakes004636.png/assets/image/fakes004838.png/assets/image/fakes005040.png/assets/image/fakes005241.png/assets/image/fakes005443.png/assets/image/fakes005644.png/assets/image/fakes006048.png/assets/image/fakes006451.png/assets/image/fakes006652.png/assets/image/fakes006854.png/assets/image/fakes007056.png/assets/image/fakes007257.png/assets/image/fakes007459.png/assets/image/fakes007660.png/assets/image/fakes008064.png/assets/image/fakes008265.png/assets/image/fakes008467.png/assets/image/fakes008668.png/assets/image/fakes008870.png/assets/image/fakes009072.png/assets/image/fakes009273.png/assets/image/fakes009475.png/assets/image/fakes009676.png/assets/image/fakes009878.png/assets/image/fakes010080.png/assets/image/fakes010281.png/assets/minima-social-icons.svg/banner.png/index.md/logo.png/logoTransparent.png';
-  var array = myVar.split("assets/");
-  array = array.filter(element => element.includes('fakes'))
-  //array = array.replace('.png/','.png');
+  const myVar = '/README.md/assets/image/fakes000000.png/assets/image/fakes000201.png/assets/image/fakes000403.png/assets/image/fakes000604.png/assets/image/fakes000806.png/assets/image/fakes001008.png/assets/image/fakes001209.png/assets/image/fakes001411.png/assets/image/fakes001612.png/assets/image/fakes001814.png/assets/image/fakes002016.png/assets/image/fakes002217.png/assets/image/fakes002419.png/assets/image/fakes002620.png/assets/image/fakes002822.png/assets/image/fakes003024.png/assets/image/fakes003225.png/assets/image/fakes003427.png/assets/image/fakes003628.png/assets/image/fakes003830.png/assets/image/fakes004032.png/assets/image/fakes004233.png/assets/image/fakes004435.png/assets/image/fakes004636.png/assets/image/fakes004838.png/assets/image/fakes005040.png/assets/image/fakes005241.png/assets/image/fakes005443.png/assets/image/fakes005644.png/assets/image/fakes006048.png/assets/image/fakes006451.png/assets/image/fakes006652.png/assets/image/fakes006854.png/assets/image/fakes007056.png/assets/image/fakes007257.png/assets/image/fakes007459.png/assets/image/fakes007660.png/assets/image/fakes008064.png/assets/image/fakes008265.png/assets/image/fakes008467.png/assets/image/fakes008668.png/assets/image/fakes008870.png/assets/image/fakes009072.png/assets/image/fakes009273.png/assets/image/fakes009475.png/assets/image/fakes009676.png/assets/image/fakes009878.png/assets/image/fakes010080.png/assets/image/fakes010281.png/assets/minima-social-icons.svg/banner.png/index.md/logo.png/logoTransparent.png';
+  const array = myVar.split("assets/");
+  const images = array.filter(element => element.includes('fakes'))
+                      .map(path => path.replace('image', 'assets/image'))
+                      .map(path => path.replace('.png/','.png'));
 
-  //array = array.replace(element => element.replace('.png/','.png'))
-  array = array.map(path => path.replace('image', 'assets/image'))
-  array = array.map(path => path.replace('.png/','.png'))
-
-  //array = array.replace('image','assets/image');
-  console.log(array)
-
-  document.getElementById("face").src=array[Math.floor(Math.random()*array.length)]
+  document.getElementById("face").src=images[Math.floor(Math.random()*images.length)]
 </script>
 
 
