@@ -17,13 +17,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-domain: createurstech.fr       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-title: Les createurs Tech français
-tagline:  Le site qui référence tous les créateurs de contenus tech sur Youtube et Twitch en francais.
-description: Première plateforme collaborative et open source qui référence les créateurs de contenus tech francophone.
+domain: thismissfrancedoesnotexist.com       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+title: thismissfrancedoesnotexist.com
+tagline:  Artificial Intelligence generated Miss France using Deepfake.
+description: Artificial Intelligence generated Miss France using Deepfake.
 image: logo.png
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://createurstech.fr
+url: https://thismissfrancedoesnotexist.com
 author : Open Source
 logo : /logo/png
 
@@ -47,12 +47,10 @@ sass:
 
 include:
   - assets/css/styles.css
-  - assets/js/filterAndSearch.js
-  - assets/js/script.js
   - assets/images/logo.png
 
   # Google Analytics
-id_googletag: G-13K8N8BZFF
+id_googletag: 
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
