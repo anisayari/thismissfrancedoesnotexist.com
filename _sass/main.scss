@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font-family: 'Inter', sans-serif;
+
+  --col-width: 92rem;
+
+  color: white;
+  font-family: var(--main-font-family);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222222;
+}
+
+.no-scroll{
+  overflow: hidden !important;
+}
+
+/* Text meant only for screen readers. */
+.ReaderOnly {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/*
+Main
+*/
+main {
+  width: 100%;
+  max-width: var(--col-width);
+  margin: auto;
+  padding: 0 1.25rem;
+}
+
+/*
+Footer
+*/
+.Footer {
+  position: relative;
+  width: 100%;
+
+  > p {
+    margin: 2rem;
+    font: 400 1.125rem/1.35 inherit;
+    text-align: center;
+  }
+}
