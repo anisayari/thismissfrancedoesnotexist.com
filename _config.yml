@@ -50,7 +50,7 @@ include:
   - assets/images/logo.png
 
   # Google Analytics
-id_googletag: 
+id_googletag: G-K3NFBBSTNT
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
