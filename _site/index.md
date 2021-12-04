@@ -20,7 +20,7 @@ Using <a href="https://arxiv.org/abs/1912.04958">StyleGAN2</a> <span>(Dec 2019)<
 <script>
   var myVar = '{{ paths }}';
   var array = myVar.split("assets/");
-  array = array.filter(element => element.includes('fakes'))
+  array = array.filter(element => element.includes('seed'))
   //array = array.replace('.png/','.png');
 
   //array = array.replace(element => element.replace('.png/','.png'))
